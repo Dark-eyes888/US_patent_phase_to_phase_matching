@@ -82,7 +82,7 @@ def create_model():
 model = create_model()
 
 callbacks = tf.keras.callbacks.EarlyStopping(monitor='val_mse',
-                                             patience=12,
+                                             patience=5,
                                              mode='max',
                                              verbose=1,
                                              restore_best_weights=True)
