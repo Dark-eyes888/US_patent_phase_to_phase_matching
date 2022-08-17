@@ -21,7 +21,7 @@ def set_seed(seed=123):
 seed = set_seed(456)
 
 train_ds = pd.read_csv('train.csv')
-test_ds = pd.read_csv('train.csv')
+test_ds = pd.read_csv('test.csv')
 cpc_codes = pd.read_csv('titles.csv')
 
 cpc_codes.rename({'code': 'context'}, axis=1, inplace=True)
